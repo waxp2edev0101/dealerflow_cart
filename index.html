@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+    <title>Carbeeza</title>
+    <style>
+      .mapboxgl-control-container {
+        position: absolute;
+        top: 0;
+        padding: 20px;
+      }
+      .mapboxgl-ctrl-bottom-right {
+        display: none;
+      }
+      .map-container .mapboxgl-control-container, .mapboxgl-ctrl-geocoder {
+        width: 100%;
+        max-width: 100%;
+      }
+      .mapboxgl-ctrl-geocoder--input {
+        padding: 24px 35px;
+      }
+      .mapboxgl-ctrl-geocoder--icon-search {
+        top: 15px;
+        left: 10px;
+      }
+      .mapboxgl-ctrl-geocoder {
+        border: 1px solid #5E78FF;
+        border-radius: 8px;
+      }
+      .mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--pin-right > * {
+        top: 13px;
+      }
+    </style>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-M9JLP58W');</script>
+  </head>
+  <body>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9JLP58W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+
+@font-face {
+  font-family: 'CircularStd';
+  font-weight: 400;
+  src: url('./assets/fonts/circular-std-medium-500.ttf');
+}
+
+/* Default */
+
+* {
+  border-width: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'CircularStd';
+}
+
+.header {
+  background: linear-gradient(132deg, rgba(159, 174, 255, 0) 0%, #5e78ff 100%),
+    #3b2f66;
+}
+
+.sidebar .filter {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  /* border: none; */
+  outline: none;
+}
+
+.vehicle_information .select__dropdown-indicator,
+.select__indicator-separator {
+  display: none;
+}
+
+/* Slider */
+.card {
+  border-radius: var(--m, 8px);
+  border: 1px solid var(--field-outline, #d9d9d9);
+  background: var(--card-back, #fff);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.slider-year {
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.slider-year-thumb {
+  text-align: center;
+  background-color: #5e78ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.slider-year-track {
+  position: relative;
+  background: #eef2f6;
+}
+
+.slider-year .slider-year-track {
+  top: 4px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.slider-year-track.slider-year-track-1 {
+  background: #5e78ff;
+}
+
+.slider-year-track.slider-year-track-2 {
+  background: #eef2f6;
+}
+.slider-year .slider-year-thumb {
+  top: -2px;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-year-thumb.active {
+  outline: none;
+}
+
+.slider-distance {
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.slider-distance-thumb {
+  text-align: center;
+  background-color: #ff7350;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.slider-distance-track {
+  position: relative;
+  background: #eef2f6;
+}
+
+.slider-distance .slider-distance-track {
+  top: 4px;
+  height: 12px;
+  border-radius: 4px;
+  background: #ff7350;
+}
+
+.slider-distance-track.slider-distance-track-1 {
+  background: #eef2f6;
+}
+
+.slider-distance-track.slider-distance-track-2 {
+  background: #eef2f6;
+}
+.slider-distance .slider-distance-thumb {
+  top: -2px;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-distance-thumb.active {
+  outline: none;
+}
+
+.slider-price-range {
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.slider-price-range-thumb {
+  text-align: center;
+  background-color: #89c664;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.slider-price-range-track {
+  position: relative;
+  background: #eef2f6;
+}
+
+.slider-price-range .slider-price-range-track {
+  top: 4px;
+  height: 12px;
+  border-radius: 4px;
+  background: #eef2f6;
+}
+
+.slider-price-range-track.slider-price-range-track-1 {
+  background: #89c664;
+}
+
+.slider-price-range-track.slider-price-range-track-2 {
+  background: #eef2f6;
+}
+.slider-price-range .slider-price-range-thumb {
+  top: -2px;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-price-range-thumb.active {
+  outline: none;
+}
+
+.slider-cash-down {
+  width: 100%;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.slider-cash-down-thumb {
+  text-align: center;
+  background-color: #89c664;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.slider-cash-down-track {
+  position: relative;
+  background: #eef2f6;
+}
+
+.slider-credit-score-track {
+  position: relative;
+  background: #eef2f6;
+}
+
+.slider-credit-score-track {
+  top: 4px;
+  height: 12px;
+  border-radius: 4px;
+  /* background: linear-gradient(270deg, #1DCF00 10.39%, #9EFF00 30.51%, #FFB800 54.55%, #FF3D00 77.57%, #FF0000 98.03%),
+linear-gradient(0deg, #EEF2F6, #EEF2F6); */
+}
+
+.slider-credit-score-track.slider-credit-score-track-0 {
+  position: inherit !important;
+}
+
+.slider-credit-score-track.slider-credit-score-track-0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      270deg,
+      #1dcf00 10.39%,
+      #9eff00 30.51%,
+      #ffb800 54.55%,
+      #ff3d00 77.57%,
+      #ff0000 98.03%
+    ),
+    linear-gradient(0deg, #eef2f6, #eef2f6);
+  border-radius: inherit;
+}
+
+.slider-cash-down .slider-cash-down-track {
+  top: 4px;
+  height: 12px;
+  border-radius: 4px;
+  background: #89c664;
+}
+
+.slider-credit-score-track.slider-credit-score-track-1 {
+  background: #eef2f6;
+}
+
+.slider-cash-down-track.slider-cash-down-track-1 {
+  background: #eef2f6;
+}
+
+.slider-cash-down-track.slider-cash-down-track-2 {
+  background: #eef2f6;
+}
+.slider-cash-down .slider-cash-down-thumb {
+  top: -2px;
+  width: 24px;
+  height: 24px;
+}
+
+.slider-cash-down-thumb.active {
+  outline: none;
+}
+
+.react-switch-handle {
+  border: 1px solid white !important;
+}
